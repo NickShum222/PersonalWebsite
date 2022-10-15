@@ -1,5 +1,3 @@
-
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -10,19 +8,20 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar {
+.navbar_1 {
   background: black;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 999;
 }
 
-.navbar__container{
+.navbar__container {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -275,7 +274,6 @@ h3 {
   font-size: 50px;
   margin-bottom: 50px;
   color: white;
-  
 }
 
 /* About */
@@ -311,7 +309,7 @@ h3 {
 } */
 
 /* Projects */
-.project__page{
+.project__page {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -478,7 +476,7 @@ h3 {
 }
 
 @media screen and (max-width: 1300px) {
-  .project__page{
+  .project__page {
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to left,
@@ -493,7 +491,7 @@ h3 {
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     height: 200vh;
     padding: 10rem 0;
@@ -505,7 +503,7 @@ h3 {
 }
 
 @media screen and (max-width: 825px) {
-  .project__page{
+  .project__page {
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to left,
@@ -520,9 +518,9 @@ h3 {
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
-    height:300vh;
+    height: 300vh;
     padding: 10rem 0;
   }
   .preview__container {
@@ -530,62 +528,67 @@ h3 {
   }
 }
 
-
 /* Contact Page */
 
-.contact__page{
+/* .contact__container{
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 0 70px;
+  width: 100vh;
 
-  background: #000000; /* fallback for old browsers */
+}
+
+.contact__page {
+  background: #000000; 
   background: -webkit-linear-gradient(
     to left,
     #434343,
     #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #434343,
-    #000000
-  );
+  ); 
+  background: linear-gradient(to left, #434343, #000000);
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
-  height: 200vh;
+  height: 100vh;
   padding: 10rem 0;
 }
-.card__body{
+.card__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form__row{
+.form__row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.head{
+.head {
   background-color: purple;
-  border-radius: 3px;
-  margin-top: -40px;
+  border-radius: 6px;
+  margin-top: -80px;
 }
-.head h3{
+.head h3 {
   margin: 0;
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.effect-1{
+.effect-1 {
   border: 0;
   outline: none;
   width: 100%;
   padding: 7px 0;
+  background: none;
+  
   border-bottom: 1px solid grey;
-
 }
-.effect-1 ~ .focus__border{
+.effect-1 ~ .focus__border {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -593,14 +596,4 @@ h3 {
   height: 2px;
   background-color: violet;
   transition: 0.4s ease;
-}
-
-.effect-1:focus ~ .focus__border{
-  width: 100%;
-  transition: 0.4s;
-  left: 0;
-
-}
-
-
-
+} */
